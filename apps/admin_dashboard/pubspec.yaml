@@ -1,0 +1,24 @@
+name: luumoh_admin_dashboard
+description: Admin dashboard for platform operations.
+publish_to: none
+version: 0.1.0
+resolution: workspace
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  file_picker: ^12.0.0-beta.7
+  luumoh_core:
+    path: ../../packages/luumoh_core
+  supabase_flutter: ^2.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

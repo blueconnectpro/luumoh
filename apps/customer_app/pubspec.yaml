@@ -1,0 +1,30 @@
+name: luumoh_customer_app
+description: Customer app for browsing, ordering, payment, and tracking.
+publish_to: none
+version: 1.0.0+1
+resolution: workspace
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  luumoh_core:
+    path: ../../packages/luumoh_core
+  app_links: ^7.1.2
+  geolocator: ^14.0.2
+  mapbox_maps_flutter: 2.27.1
+  supabase_flutter: ^2.9.0
+  url_launcher: ^6.3.1
+  webview_flutter: ^4.10.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/branding/luumoh_logo.png

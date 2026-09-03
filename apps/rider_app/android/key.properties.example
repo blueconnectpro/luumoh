@@ -1,0 +1,4 @@
+storePassword=change-me
+keyPassword=change-me
+keyAlias=luumoh-rider
+storeFile=../release-upload-key.jks

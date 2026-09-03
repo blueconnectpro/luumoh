@@ -1,0 +1,26 @@
+name: luumoh_rider_app
+description: Rider app for accepting orders and updating ETAs.
+publish_to: none
+version: 1.0.0+1
+resolution: workspace
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  geolocator: ^14.0.2
+  luumoh_core:
+    path: ../../packages/luumoh_core
+  mapbox_maps_flutter: 2.27.1
+  supabase_flutter: ^2.9.0
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

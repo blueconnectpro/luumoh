@@ -1,0 +1,26 @@
+project_id = "luumoh"
+
+[api]
+enabled = true
+schemas = ["public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[auth]
+enabled = true
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
+
+[functions.monnify-initiate]
+verify_jwt = true
+
+[functions.monnify-confirm]
+verify_jwt = true
+
+[functions.monnify-webhook]
+verify_jwt = false
+
+[functions.monnify-return]
+verify_jwt = false
